@@ -22,6 +22,7 @@
 		43ABFA812B4AD5B5009E22EE /* ButtonStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43ABFA802B4AD5B5009E22EE /* ButtonStyles.swift */; };
 		43ABFA832B4B0CBE009E22EE /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43ABFA822B4B0CBE009E22EE /* CardView.swift */; };
 		43CD52AC2B4EEB760073682B /* CustomModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43CD52AB2B4EEB760073682B /* CustomModifiers.swift */; };
+		43CD52AE2B4EF5620073682B /* Buttons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43CD52AD2B4EF5620073682B /* Buttons.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,7 @@
 		43ABFA802B4AD5B5009E22EE /* ButtonStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonStyles.swift; sourceTree = "<group>"; };
 		43ABFA822B4B0CBE009E22EE /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		43CD52AB2B4EEB760073682B /* CustomModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomModifiers.swift; sourceTree = "<group>"; };
+		43CD52AD2B4EF5620073682B /* Buttons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Buttons.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 				43ABFA822B4B0CBE009E22EE /* CardView.swift */,
 				435FCC9E2B4EA2950086A721 /* CardViewComponents.swift */,
 				435FCCA62B4EB2140086A721 /* Extensions */,
+				43CD52AD2B4EF5620073682B /* Buttons.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -347,6 +350,7 @@
 				435FCC9F2B4EA2950086A721 /* CardViewComponents.swift in Sources */,
 				43CD52AC2B4EEB760073682B /* CustomModifiers.swift in Sources */,
 				435FCCA52B4EB1FD0086A721 /* Images.swift in Sources */,
+				43CD52AE2B4EF5620073682B /* Buttons.swift in Sources */,
 				435FCCA32B4EA95C0086A721 /* Colors.swift in Sources */,
 				438DD8722B23098E00641CDE /* ContentView.swift in Sources */,
 				43ABFA812B4AD5B5009E22EE /* ButtonStyles.swift in Sources */,

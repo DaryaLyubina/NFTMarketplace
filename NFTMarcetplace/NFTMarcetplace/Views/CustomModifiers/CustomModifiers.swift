@@ -34,6 +34,7 @@ extension View {
       )
       .overlay(
         RoundedRectangle(cornerRadius: Constants.CollectionsCard.cardCornerRadius)
+          .inset(by: Constants.CollectionsCard.cardStrokeWidth / 2)
           .stroke(lineWidth: Constants.CollectionsCard.cardStrokeWidth)
           .foregroundColor(Color.CollectionsCard.cardBorder)
       )
