@@ -18,6 +18,10 @@ extension EllipticalGradient {
 }
 
 extension Color {
+  enum General {
+    static let textSecondaryColor = Color("TextSecondaryColor")
+  }
+
   enum CollectionsCard {
     static let cardBorder = Color("CardBorder")
     static let cardBackground = Color("CardBackground")
