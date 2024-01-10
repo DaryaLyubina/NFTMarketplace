@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		435FCC9F2B4EA2950086A721 /* CardViewComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435FCC9E2B4EA2950086A721 /* CardViewComponents.swift */; };
+		435FCCA12B4EA3740086A721 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435FCCA02B4EA3740086A721 /* Constants.swift */; };
+		435FCCA32B4EA95C0086A721 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435FCCA22B4EA95C0086A721 /* Colors.swift */; };
 		438DD8702B23098E00641CDE /* NFTMarcetplaceApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438DD86F2B23098E00641CDE /* NFTMarcetplaceApp.swift */; };
 		438DD8722B23098E00641CDE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438DD8712B23098E00641CDE /* ContentView.swift */; };
 		438DD8742B23099000641CDE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 438DD8732B23099000641CDE /* Assets.xcassets */; };
@@ -14,6 +17,9 @@
 		438DD8812B23099100641CDE /* NFTMarcetplaceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438DD8802B23099100641CDE /* NFTMarcetplaceTests.swift */; };
 		438DD88B2B23099100641CDE /* NFTMarcetplaceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438DD88A2B23099100641CDE /* NFTMarcetplaceUITests.swift */; };
 		438DD88D2B23099100641CDE /* NFTMarcetplaceUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438DD88C2B23099100641CDE /* NFTMarcetplaceUITestsLaunchTests.swift */; };
+		438DD89B2B23117700641CDE /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438DD89A2B23117700641CDE /* WelcomeView.swift */; };
+		43ABFA812B4AD5B5009E22EE /* ButtonStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43ABFA802B4AD5B5009E22EE /* ButtonStyles.swift */; };
+		43ABFA832B4B0CBE009E22EE /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43ABFA822B4B0CBE009E22EE /* CardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +40,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		435FCC9E2B4EA2950086A721 /* CardViewComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewComponents.swift; sourceTree = "<group>"; };
+		435FCCA02B4EA3740086A721 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		435FCCA22B4EA95C0086A721 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		438DD86C2B23098E00641CDE /* NFTMarcetplace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NFTMarcetplace.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		438DD86F2B23098E00641CDE /* NFTMarcetplaceApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFTMarcetplaceApp.swift; sourceTree = "<group>"; };
 		438DD8712B23098E00641CDE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -44,6 +53,9 @@
 		438DD8862B23099100641CDE /* NFTMarcetplaceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NFTMarcetplaceUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		438DD88A2B23099100641CDE /* NFTMarcetplaceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFTMarcetplaceUITests.swift; sourceTree = "<group>"; };
 		438DD88C2B23099100641CDE /* NFTMarcetplaceUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFTMarcetplaceUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		438DD89A2B23117700641CDE /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		43ABFA802B4AD5B5009E22EE /* ButtonStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonStyles.swift; sourceTree = "<group>"; };
+		43ABFA822B4B0CBE009E22EE /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +83,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		435FCC9B2B4EA2130086A721 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				438DD8712B23098E00641CDE /* ContentView.swift */,
+				438DD89A2B23117700641CDE /* WelcomeView.swift */,
+				43ABFA822B4B0CBE009E22EE /* CardView.swift */,
+				435FCC9E2B4EA2950086A721 /* CardViewComponents.swift */,
+				435FCCA22B4EA95C0086A721 /* Colors.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		435FCC9C2B4EA21E0086A721 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				438DD8732B23099000641CDE /* Assets.xcassets */,
+				438DD86F2B23098E00641CDE /* NFTMarcetplaceApp.swift */,
+				435FCCA02B4EA3740086A721 /* Constants.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		435FCC9D2B4EA2320086A721 /* Styles */ = {
+			isa = PBXGroup;
+			children = (
+				43ABFA802B4AD5B5009E22EE /* ButtonStyles.swift */,
+			);
+			path = Styles;
+			sourceTree = "<group>";
+		};
 		438DD8632B23098E00641CDE = {
 			isa = PBXGroup;
 			children = (
@@ -94,10 +136,10 @@
 		438DD86E2B23098E00641CDE /* NFTMarcetplace */ = {
 			isa = PBXGroup;
 			children = (
-				438DD86F2B23098E00641CDE /* NFTMarcetplaceApp.swift */,
-				438DD8712B23098E00641CDE /* ContentView.swift */,
-				438DD8732B23099000641CDE /* Assets.xcassets */,
+				435FCC9C2B4EA21E0086A721 /* App */,
+				435FCC9B2B4EA2130086A721 /* Views */,
 				438DD8752B23099000641CDE /* Preview Content */,
+				435FCC9D2B4EA2320086A721 /* Styles */,
 			);
 			path = NFTMarcetplace;
 			sourceTree = "<group>";
@@ -280,7 +322,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				435FCC9F2B4EA2950086A721 /* CardViewComponents.swift in Sources */,
+				435FCCA32B4EA95C0086A721 /* Colors.swift in Sources */,
 				438DD8722B23098E00641CDE /* ContentView.swift in Sources */,
+				43ABFA812B4AD5B5009E22EE /* ButtonStyles.swift in Sources */,
+				43ABFA832B4B0CBE009E22EE /* CardView.swift in Sources */,
+				435FCCA12B4EA3740086A721 /* Constants.swift in Sources */,
+				438DD89B2B23117700641CDE /* WelcomeView.swift in Sources */,
 				438DD8702B23098E00641CDE /* NFTMarcetplaceApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
