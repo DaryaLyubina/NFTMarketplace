@@ -64,7 +64,10 @@ struct WelcomeMessageFooter: View {
                 .buttonStyle(WelcomeButtonStyle())
             }
             .padding(30)
-            .background(.ultraThinMaterial.opacity(0.5), in: RoundedRectangle(cornerRadius: 30))
+            .background(
+              .ultraThinMaterial,
+              in: RoundedRectangle(cornerRadius: 8, style: .continuous)
+            )
             .cornerRadius(30)
             .overlay(
                 RoundedRectangle(cornerRadius: 30)
