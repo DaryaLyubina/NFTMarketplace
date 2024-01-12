@@ -32,6 +32,11 @@ extension View {
       .clipShape(
         RoundedRectangle(cornerRadius: Constants.CollectionsCard.cardCornerRadius)
       )
+      .styledBorder()
+  }
+
+  func styledBorder() -> some View {
+    return self
       .overlay(
         RoundedRectangle(cornerRadius: Constants.CollectionsCard.cardCornerRadius)
           .inset(by: Constants.CollectionsCard.cardStrokeWidth / 2)

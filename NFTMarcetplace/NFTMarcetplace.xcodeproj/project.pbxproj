@@ -97,8 +97,8 @@
 				438DD89A2B23117700641CDE /* WelcomeView.swift */,
 				43ABFA822B4B0CBE009E22EE /* CardView.swift */,
 				435FCC9E2B4EA2950086A721 /* CardViewComponents.swift */,
-				435FCCA62B4EB2140086A721 /* Extensions */,
 				43CD52AD2B4EF5620073682B /* Buttons.swift */,
+				435FCCA62B4EB2140086A721 /* Extensions */,
 			);
 			path = Views;
 			sourceTree = "<group>";
