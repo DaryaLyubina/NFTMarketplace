@@ -24,6 +24,7 @@
 		4395980D2B51E5430059BC8E /* CategoryDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4395980C2B51E5430059BC8E /* CategoryDetails.swift */; };
 		43ABFA812B4AD5B5009E22EE /* ButtonStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43ABFA802B4AD5B5009E22EE /* ButtonStyles.swift */; };
 		43ABFA832B4B0CBE009E22EE /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43ABFA822B4B0CBE009E22EE /* CardView.swift */; };
+		43C6858A2B559E9D007E5755 /* CategoriesGallery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C685892B559E9D007E5755 /* CategoriesGallery.swift */; };
 		43CD52AC2B4EEB760073682B /* CustomModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43CD52AB2B4EEB760073682B /* CustomModifiers.swift */; };
 		43CD52AE2B4EF5620073682B /* Buttons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43CD52AD2B4EF5620073682B /* Buttons.swift */; };
 /* End PBXBuildFile section */
@@ -66,6 +67,7 @@
 		4395980C2B51E5430059BC8E /* CategoryDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryDetails.swift; sourceTree = "<group>"; };
 		43ABFA802B4AD5B5009E22EE /* ButtonStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonStyles.swift; sourceTree = "<group>"; };
 		43ABFA822B4B0CBE009E22EE /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		43C685892B559E9D007E5755 /* CategoriesGallery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesGallery.swift; sourceTree = "<group>"; };
 		43CD52AB2B4EEB760073682B /* CustomModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomModifiers.swift; sourceTree = "<group>"; };
 		43CD52AD2B4EF5620073682B /* Buttons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Buttons.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -106,6 +108,7 @@
 				43CD52AD2B4EF5620073682B /* Buttons.swift */,
 				435FCCA62B4EB2140086A721 /* Extensions */,
 				439334502B51514D0005A1DD /* HomeView.swift */,
+				43C685892B559E9D007E5755 /* CategoriesGallery.swift */,
 				4395980C2B51E5430059BC8E /* CategoryDetails.swift */,
 			);
 			path = Views;
@@ -375,6 +378,7 @@
 				43ABFA832B4B0CBE009E22EE /* CardView.swift in Sources */,
 				435FCCA12B4EA3740086A721 /* Constants.swift in Sources */,
 				439334512B51514D0005A1DD /* HomeView.swift in Sources */,
+				43C6858A2B559E9D007E5755 /* CategoriesGallery.swift in Sources */,
 				438DD89B2B23117700641CDE /* WelcomeView.swift in Sources */,
 				438DD8702B23098E00641CDE /* NFTMarcetplaceApp.swift in Sources */,
 				439334542B5152D20005A1DD /* Category.swift in Sources */,

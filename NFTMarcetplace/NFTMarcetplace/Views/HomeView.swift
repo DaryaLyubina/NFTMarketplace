@@ -15,9 +15,10 @@ struct HomeView: View {
       ZStack {
         EllipticalGradient.background2
           .ignoresSafeArea()
+
         ScrollView {
           VStack(alignment: .leading, spacing: 20.0) {
-            ForEach(0..<5) { _ in
+            Section {
               CategoriesGallery(categories: categories)
             }
           }
@@ -36,27 +37,5 @@ struct HomeView: View {
 struct HomeView_Previews: PreviewProvider {
   static var previews: some View {
     HomeView()
-  }
-}
-
-struct CategoriesGallery: View {
-  var categories: [Category]
-  var body: some View {
-      ScrollView(.horizontal) {
-        LazyHStack(alignment: .top, spacing: 10.0) {
-          ForEach(categories) { category in
-            NavigationLink(value: category) {
-              CardView(title: category.title,
-                       imageName: category.imageName)
-            }
-            .tint(.clear)
-          }
-        }
-      .navigationDestination(for: Category.self) { category in
-        CategoryDetails(categoryName: category.title, categoryImage: category.imageName)
-        .padding(.horizontal)
-      }
-      .scrollIndicators(.hidden)
-    }
   }
 }
