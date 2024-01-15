@@ -23,6 +23,10 @@ struct HomeView: View {
           }
         }
       }
+      .navigationDestination(for: Category.self) { category in
+        CategoryDetails(categoryName: category.title, categoryImage: category.imageName)
+        .padding(.horizontal)
+      }
       .navigationBarTitleDisplayMode(.inline)
       .navigationTitle("NFT Marketplace")
     }
@@ -37,20 +41,22 @@ struct HomeView_Previews: PreviewProvider {
 
 struct CategoriesGallery: View {
   var categories: [Category]
-
   var body: some View {
-    ScrollView(.horizontal) {
-      HStack(alignment: .top, spacing: 10.0) {
-        ForEach(categories) { category in
-          NavigationLink(destination: {
-            CategoryDetails(categoryName: category.title, categoryImage: category.imageName)
-          }, label: {
-            CardView(title: category.title, imageName: category.imageName)
-          })
+      ScrollView(.horizontal) {
+        LazyHStack(alignment: .top, spacing: 10.0) {
+          ForEach(categories) { category in
+            NavigationLink(value: category) {
+              CardView(title: category.title,
+                       imageName: category.imageName)
+            }
+            .tint(.clear)
+          }
         }
+      .navigationDestination(for: Category.self) { category in
+        CategoryDetails(categoryName: category.title, categoryImage: category.imageName)
+        .padding(.horizontal)
       }
-      .padding(.horizontal)
+      .scrollIndicators(.hidden)
     }
-    .scrollIndicators(.hidden)
   }
 }

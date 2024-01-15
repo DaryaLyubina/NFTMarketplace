@@ -20,3 +20,7 @@ struct Category: Identifiable {
             .init(title: "Example5", imageName: "example5")]
   }
 }
+
+extension Category: Hashable {
+
+}
