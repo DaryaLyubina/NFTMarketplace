@@ -12,7 +12,6 @@
 		435FCCA32B4EA95C0086A721 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435FCCA22B4EA95C0086A721 /* Colors.swift */; };
 		435FCCA52B4EB1FD0086A721 /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435FCCA42B4EB1FD0086A721 /* Images.swift */; };
 		438DD8702B23098E00641CDE /* NFTMarcetplaceApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438DD86F2B23098E00641CDE /* NFTMarcetplaceApp.swift */; };
-		438DD8722B23098E00641CDE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438DD8712B23098E00641CDE /* ContentView.swift */; };
 		438DD8742B23099000641CDE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 438DD8732B23099000641CDE /* Assets.xcassets */; };
 		438DD8772B23099000641CDE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 438DD8762B23099000641CDE /* Preview Assets.xcassets */; };
 		438DD8812B23099100641CDE /* NFTMarcetplaceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438DD8802B23099100641CDE /* NFTMarcetplaceTests.swift */; };
@@ -27,6 +26,8 @@
 		43C6858A2B559E9D007E5755 /* HorisontalGalleries.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C685892B559E9D007E5755 /* HorisontalGalleries.swift */; };
 		43C6858C2B55A80A007E5755 /* TrendingItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C6858B2B55A80A007E5755 /* TrendingItem.swift */; };
 		43C6858E2B566BBE007E5755 /* Seller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C6858D2B566BBE007E5755 /* Seller.swift */; };
+		43C685912B567505007E5755 /* AllTrendingCollections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C685902B567505007E5755 /* AllTrendingCollections.swift */; };
+		43C685932B567926007E5755 /* AllSellersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C685922B567926007E5755 /* AllSellersView.swift */; };
 		43CD52AC2B4EEB760073682B /* CustomModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43CD52AB2B4EEB760073682B /* CustomModifiers.swift */; };
 		43CD52AE2B4EF5620073682B /* Buttons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43CD52AD2B4EF5620073682B /* Buttons.swift */; };
 /* End PBXBuildFile section */
@@ -55,7 +56,6 @@
 		435FCCA42B4EB1FD0086A721 /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
 		438DD86C2B23098E00641CDE /* NFTMarcetplace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NFTMarcetplace.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		438DD86F2B23098E00641CDE /* NFTMarcetplaceApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFTMarcetplaceApp.swift; sourceTree = "<group>"; };
-		438DD8712B23098E00641CDE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		438DD8732B23099000641CDE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		438DD8762B23099000641CDE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		438DD87C2B23099100641CDE /* NFTMarcetplaceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NFTMarcetplaceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -72,6 +72,8 @@
 		43C685892B559E9D007E5755 /* HorisontalGalleries.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorisontalGalleries.swift; sourceTree = "<group>"; };
 		43C6858B2B55A80A007E5755 /* TrendingItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingItem.swift; sourceTree = "<group>"; };
 		43C6858D2B566BBE007E5755 /* Seller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Seller.swift; sourceTree = "<group>"; };
+		43C685902B567505007E5755 /* AllTrendingCollections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllTrendingCollections.swift; sourceTree = "<group>"; };
+		43C685922B567926007E5755 /* AllSellersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllSellersView.swift; sourceTree = "<group>"; };
 		43CD52AB2B4EEB760073682B /* CustomModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomModifiers.swift; sourceTree = "<group>"; };
 		43CD52AD2B4EF5620073682B /* Buttons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Buttons.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -105,15 +107,13 @@
 			isa = PBXGroup;
 			children = (
 				43CD52AA2B4EEB450073682B /* CustomModifiers */,
-				438DD8712B23098E00641CDE /* ContentView.swift */,
 				438DD89A2B23117700641CDE /* WelcomeView.swift */,
-				43ABFA822B4B0CBE009E22EE /* CardView.swift */,
-				435FCC9E2B4EA2950086A721 /* CardViewComponents.swift */,
-				43CD52AD2B4EF5620073682B /* Buttons.swift */,
+				43C6858F2B567292007E5755 /* ViewComponents */,
 				435FCCA62B4EB2140086A721 /* Extensions */,
 				439334502B51514D0005A1DD /* HomeView.swift */,
-				43C685892B559E9D007E5755 /* HorisontalGalleries.swift */,
 				4395980C2B51E5430059BC8E /* CategoryDetails.swift */,
+				43C685902B567505007E5755 /* AllTrendingCollections.swift */,
+				43C685922B567926007E5755 /* AllSellersView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -210,6 +210,17 @@
 				43C6858D2B566BBE007E5755 /* Seller.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		43C6858F2B567292007E5755 /* ViewComponents */ = {
+			isa = PBXGroup;
+			children = (
+				43ABFA822B4B0CBE009E22EE /* CardView.swift */,
+				435FCC9E2B4EA2950086A721 /* CardViewComponents.swift */,
+				43C685892B559E9D007E5755 /* HorisontalGalleries.swift */,
+				43CD52AD2B4EF5620073682B /* Buttons.swift */,
+			);
+			path = ViewComponents;
 			sourceTree = "<group>";
 		};
 		43CD52AA2B4EEB450073682B /* CustomModifiers */ = {
@@ -374,19 +385,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				435FCC9F2B4EA2950086A721 /* CardViewComponents.swift in Sources */,
+				43C685932B567926007E5755 /* AllSellersView.swift in Sources */,
 				43CD52AC2B4EEB760073682B /* CustomModifiers.swift in Sources */,
 				4395980D2B51E5430059BC8E /* CategoryDetails.swift in Sources */,
 				435FCCA52B4EB1FD0086A721 /* Images.swift in Sources */,
 				43C6858E2B566BBE007E5755 /* Seller.swift in Sources */,
 				43CD52AE2B4EF5620073682B /* Buttons.swift in Sources */,
 				435FCCA32B4EA95C0086A721 /* Colors.swift in Sources */,
-				438DD8722B23098E00641CDE /* ContentView.swift in Sources */,
 				43C6858C2B55A80A007E5755 /* TrendingItem.swift in Sources */,
 				43ABFA812B4AD5B5009E22EE /* ButtonStyles.swift in Sources */,
 				43ABFA832B4B0CBE009E22EE /* CardView.swift in Sources */,
 				435FCCA12B4EA3740086A721 /* Constants.swift in Sources */,
 				439334512B51514D0005A1DD /* HomeView.swift in Sources */,
 				43C6858A2B559E9D007E5755 /* HorisontalGalleries.swift in Sources */,
+				43C685912B567505007E5755 /* AllTrendingCollections.swift in Sources */,
 				438DD89B2B23117700641CDE /* WelcomeView.swift in Sources */,
 				438DD8702B23098E00641CDE /* NFTMarcetplaceApp.swift in Sources */,
 				439334542B5152D20005A1DD /* Category.swift in Sources */,
