@@ -8,8 +8,9 @@
 import SwiftUI
 
 struct HomeView: View {
-  var categories = Category.createTestData()
-  var trendingItems = TrendingItem.createTestData()
+  private var categories = Category.createTestData()
+  private var trendingItems = TrendingItem.createTestData()
+  private var topSellers = Seller.createTestData()
 
   var body: some View {
     NavigationStack {
@@ -18,13 +19,23 @@ struct HomeView: View {
           .ignoresSafeArea()
 
         ScrollView {
-          VStack(alignment: .leading, spacing: 20.0) {
+          VStack(alignment: .leading) {
             Section(header: SectionHeader(title: "Categories")) {
               CategoriesGallery(categories: categories)
             }
 
+            Spacer()
+              .frame(height: 20)
+
             Section(header: SectionHeader(title: "Trending collections")) {
               TrendingCollectionsGallery(trendingItems: trendingItems)
+            }
+
+            Spacer()
+              .frame(height: 20)
+            
+            Section(header: SectionHeader(title: "Trending collections")) {
+              SellersGallery(sellers: topSellers)
             }
           }
         }

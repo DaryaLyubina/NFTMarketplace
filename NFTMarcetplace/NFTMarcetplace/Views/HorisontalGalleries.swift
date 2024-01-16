@@ -50,6 +50,27 @@ struct TrendingCollectionsGallery: View {
   }
 }
 
+struct SellersGallery: View {
+  var sellers: [Seller]
+
+  var body: some View {
+    ScrollView(.horizontal) {
+      LazyHStack(alignment: .top, spacing: 10.0) {
+        ForEach(sellers) { seller in
+          SellerCardView(imageName: seller.imageName,
+                         title: seller.title,
+                         description: seller.description,
+                         price: seller.price,
+                         numberOfLikes: .constant(seller.countOfLikes),
+                         isFavorite: .constant(seller.isFavorite))
+        }
+      }
+      .padding(.horizontal)
+    }
+    .scrollIndicators(.hidden)
+  }
+}
+
 struct CategoriesGallery_Previews: PreviewProvider {
     static var previews: some View {
       ZStack {
@@ -59,6 +80,7 @@ struct CategoriesGallery_Previews: PreviewProvider {
         VStack {
           CategoriesGallery(categories: Category.createTestData())
           TrendingCollectionsGallery(trendingItems: TrendingItem.createTestData())
+          SellersGallery(sellers: Seller.createTestData())
         }
       }
     }

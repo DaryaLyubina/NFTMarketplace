@@ -26,6 +26,7 @@
 		43ABFA832B4B0CBE009E22EE /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43ABFA822B4B0CBE009E22EE /* CardView.swift */; };
 		43C6858A2B559E9D007E5755 /* HorisontalGalleries.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C685892B559E9D007E5755 /* HorisontalGalleries.swift */; };
 		43C6858C2B55A80A007E5755 /* TrendingItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C6858B2B55A80A007E5755 /* TrendingItem.swift */; };
+		43C6858E2B566BBE007E5755 /* Seller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C6858D2B566BBE007E5755 /* Seller.swift */; };
 		43CD52AC2B4EEB760073682B /* CustomModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43CD52AB2B4EEB760073682B /* CustomModifiers.swift */; };
 		43CD52AE2B4EF5620073682B /* Buttons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43CD52AD2B4EF5620073682B /* Buttons.swift */; };
 /* End PBXBuildFile section */
@@ -70,6 +71,7 @@
 		43ABFA822B4B0CBE009E22EE /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		43C685892B559E9D007E5755 /* HorisontalGalleries.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorisontalGalleries.swift; sourceTree = "<group>"; };
 		43C6858B2B55A80A007E5755 /* TrendingItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingItem.swift; sourceTree = "<group>"; };
+		43C6858D2B566BBE007E5755 /* Seller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Seller.swift; sourceTree = "<group>"; };
 		43CD52AB2B4EEB760073682B /* CustomModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomModifiers.swift; sourceTree = "<group>"; };
 		43CD52AD2B4EF5620073682B /* Buttons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Buttons.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -205,6 +207,7 @@
 			children = (
 				439334532B5152D20005A1DD /* Category.swift */,
 				43C6858B2B55A80A007E5755 /* TrendingItem.swift */,
+				43C6858D2B566BBE007E5755 /* Seller.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -374,6 +377,7 @@
 				43CD52AC2B4EEB760073682B /* CustomModifiers.swift in Sources */,
 				4395980D2B51E5430059BC8E /* CategoryDetails.swift in Sources */,
 				435FCCA52B4EB1FD0086A721 /* Images.swift in Sources */,
+				43C6858E2B566BBE007E5755 /* Seller.swift in Sources */,
 				43CD52AE2B4EF5620073682B /* Buttons.swift in Sources */,
 				435FCCA32B4EA95C0086A721 /* Colors.swift in Sources */,
 				438DD8722B23098E00641CDE /* ContentView.swift in Sources */,
