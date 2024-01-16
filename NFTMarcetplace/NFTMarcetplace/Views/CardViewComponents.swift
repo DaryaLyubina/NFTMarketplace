@@ -155,12 +155,12 @@ struct CollectionsCardView_Previews: PreviewProvider {
       HStack(alignment: .top) {
         Spacer()
         CollectionsCardView(
-          imageName: "CollectionsCardViewExample",
+          imageName: "example6",
           title: "3D Art",
           numberOfLikes: .constant(200),
           isFavorite: .constant(false))
 
-        SellerCardView(imageName: "CollectionsCardViewExample",
+        SellerCardView(imageName: "example6",
                        title: "Title", description: "description",
                        price: "0.006", numberOfLikes: .constant(20000),
                        isFavorite: .constant(true))

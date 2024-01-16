@@ -8,17 +8,8 @@
 import SwiftUI
 
 struct CardView: View {
-  var imageName: String
   var title: String
-
-  let gradient = LinearGradient(
-    gradient: Gradient(stops: [
-      .init(color: .white, location: 0),
-      .init(color: .clear, location: 0.4)
-    ]),
-    startPoint: .bottom,
-    endPoint: .top
-  )
+  var imageName: String
 
   var body: some View {
     ZStack(alignment: .bottom) {
@@ -58,7 +49,7 @@ struct ArtCard_Previews: PreviewProvider {
         .ignoresSafeArea()
 
       VStack(spacing: 10) {
-        CardView(imageName: "ExampleCard", title: "Title")
+        CardView(title: "Title", imageName: "example1")
       }
     }
   }
