@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import SwiftUI
 
 struct Seller: Identifiable {
   var id = UUID()
@@ -43,4 +44,15 @@ struct Seller: Identifiable {
 
 extension Seller: Hashable {
 
+}
+
+extension Seller {
+  var sellerCard: some View {
+    SellerCardView(imageName: imageName,
+                   title: title,
+                   description: description,
+                   price: price,
+                   numberOfLikes: .constant(countOfLikes),
+                   isFavorite: .constant(isFavorite))
+  }
 }

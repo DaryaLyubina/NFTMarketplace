@@ -20,35 +20,23 @@ struct HomeView: View {
 
         ScrollView {
           VStack(alignment: .leading) {
-            Section(header: SectionHeader(title: "Categories")) {
-              CategoriesGallery(categories: categories)
-            }
+            CategoriesSection(categories: categories)
 
             Spacer()
               .frame(height: 20)
 
-            Section {
-              TrendingCollectionsGallery(trendingItems: trendingItems)
-            } header: {
-              NavigationLink {
-                AllTrendingCollections(trendingItems: trendingItems)
-              } label: {
-                SectionHeader(title: "Trending collections")
-              }
-            }
+            TrendingItemsSection(trendingItems: trendingItems)
 
             Spacer()
               .frame(height: 20)
 
-            Section(header: SectionHeader(title: "Top seller")) {
-              SellersGallery(sellers: topSellers)
-            }
+            TopSellerSection(sellers: topSellers)
           }
         }
       }
       .navigationDestination(for: Category.self) { category in
         CategoryDetails(categoryName: category.title, categoryImage: category.imageName)
-        .padding(.horizontal)
+          .padding(.horizontal)
       }
       .navigationTitle("NFT Marketplace")
     }
@@ -74,5 +62,47 @@ struct SectionHeader: View {
 struct HomeView_Previews: PreviewProvider {
   static var previews: some View {
     HomeView()
+  }
+}
+
+private struct TrendingItemsSection: View {
+  var trendingItems: [TrendingItem]
+
+  var body: some View {
+    Section {
+      TrendingCollectionsGallery(trendingItems: trendingItems)
+    } header: {
+      NavigationLink {
+        AllTrendingCollections(trendingItems: trendingItems)
+      } label: {
+        SectionHeader(title: "Trending collections")
+      }
+    }
+  }
+}
+
+private struct TopSellerSection: View {
+  var sellers: [Seller]
+
+  var body: some View {
+    Section {
+      SellersGallery(sellers: sellers)
+    } header: {
+      NavigationLink {
+        AllSellersView(sellers: sellers)
+      } label: {
+        SectionHeader(title: "Top seller")
+      }
+    }
+  }
+}
+
+struct CategoriesSection: View {
+  var categories: [Category]
+
+  var body: some View {
+    Section(header: SectionHeader(title: "Categories")) {
+      CategoriesGallery(categories: categories)
+    }
   }
 }

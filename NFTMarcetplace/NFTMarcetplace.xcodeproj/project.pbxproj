@@ -27,6 +27,7 @@
 		43C6858C2B55A80A007E5755 /* TrendingItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C6858B2B55A80A007E5755 /* TrendingItem.swift */; };
 		43C6858E2B566BBE007E5755 /* Seller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C6858D2B566BBE007E5755 /* Seller.swift */; };
 		43C685912B567505007E5755 /* AllTrendingCollections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C685902B567505007E5755 /* AllTrendingCollections.swift */; };
+		43C685932B567926007E5755 /* AllSellersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C685922B567926007E5755 /* AllSellersView.swift */; };
 		43CD52AC2B4EEB760073682B /* CustomModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43CD52AB2B4EEB760073682B /* CustomModifiers.swift */; };
 		43CD52AE2B4EF5620073682B /* Buttons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43CD52AD2B4EF5620073682B /* Buttons.swift */; };
 /* End PBXBuildFile section */
@@ -72,6 +73,7 @@
 		43C6858B2B55A80A007E5755 /* TrendingItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingItem.swift; sourceTree = "<group>"; };
 		43C6858D2B566BBE007E5755 /* Seller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Seller.swift; sourceTree = "<group>"; };
 		43C685902B567505007E5755 /* AllTrendingCollections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllTrendingCollections.swift; sourceTree = "<group>"; };
+		43C685922B567926007E5755 /* AllSellersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllSellersView.swift; sourceTree = "<group>"; };
 		43CD52AB2B4EEB760073682B /* CustomModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomModifiers.swift; sourceTree = "<group>"; };
 		43CD52AD2B4EF5620073682B /* Buttons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Buttons.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -111,6 +113,7 @@
 				439334502B51514D0005A1DD /* HomeView.swift */,
 				4395980C2B51E5430059BC8E /* CategoryDetails.swift */,
 				43C685902B567505007E5755 /* AllTrendingCollections.swift */,
+				43C685922B567926007E5755 /* AllSellersView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -382,6 +385,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				435FCC9F2B4EA2950086A721 /* CardViewComponents.swift in Sources */,
+				43C685932B567926007E5755 /* AllSellersView.swift in Sources */,
 				43CD52AC2B4EEB760073682B /* CustomModifiers.swift in Sources */,
 				4395980D2B51E5430059BC8E /* CategoryDetails.swift in Sources */,
 				435FCCA52B4EB1FD0086A721 /* Images.swift in Sources */,

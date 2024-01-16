@@ -15,15 +15,15 @@ struct AllTrendingCollections: View {
       EllipticalGradient
         .background2
         .ignoresSafeArea()
-      
+
       ScrollView {
-        LazyVGrid(columns: [.init(.adaptive(minimum: 175))]) {
+        LazyVGrid(columns: [.init(.adaptive(minimum: 175), spacing: 15)]) {
           ForEach(trendingItems) { item in
-              CollectionsCardView(imageName:
-                                    item.imageName,
-                                  title: item.title,
-                                  numberOfLikes: .constant(item.countOfLikes),
-                                  isFavorite: .constant(item.isFavorite))
+            CollectionsCardView(imageName:
+                                  item.imageName,
+                                title: item.title,
+                                numberOfLikes: .constant(item.countOfLikes),
+                                isFavorite: .constant(item.isFavorite))
           }
         }
       }
