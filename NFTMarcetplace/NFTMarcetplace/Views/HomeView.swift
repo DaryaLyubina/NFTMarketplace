@@ -27,14 +27,20 @@ struct HomeView: View {
             Spacer()
               .frame(height: 20)
 
-            Section(header: SectionHeader(title: "Trending collections")) {
+            Section {
               TrendingCollectionsGallery(trendingItems: trendingItems)
+            } header: {
+              NavigationLink {
+                AllTrendingCollections(trendingItems: trendingItems)
+              } label: {
+                SectionHeader(title: "Trending collections")
+              }
             }
 
             Spacer()
               .frame(height: 20)
 
-            Section(header: SectionHeader(title: "Trending collections")) {
+            Section(header: SectionHeader(title: "Top seller")) {
               SellersGallery(sellers: topSellers)
             }
           }
@@ -63,7 +69,6 @@ struct SectionHeader: View {
       .foregroundColor(.white)
       .padding(.horizontal)
   }
-
 }
 
 struct HomeView_Previews: PreviewProvider {
