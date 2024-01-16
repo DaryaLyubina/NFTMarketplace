@@ -33,7 +33,7 @@ struct HomeView: View {
 
             Spacer()
               .frame(height: 20)
-            
+
             Section(header: SectionHeader(title: "Trending collections")) {
               SellersGallery(sellers: topSellers)
             }
@@ -44,9 +44,10 @@ struct HomeView: View {
         CategoryDetails(categoryName: category.title, categoryImage: category.imageName)
         .padding(.horizontal)
       }
-      .navigationBarTitleDisplayMode(.inline)
       .navigationTitle("NFT Marketplace")
     }
+    .toolbarColorScheme(.dark, for: .navigationBar)
+    .preferredColorScheme(.dark)
   }
 }
 
