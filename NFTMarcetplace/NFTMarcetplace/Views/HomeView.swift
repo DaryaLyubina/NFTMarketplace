@@ -9,6 +9,7 @@ import SwiftUI
 
 struct HomeView: View {
   var categories = Category.createTestData()
+  var trendingItems = TrendingItem.createTestData()
 
   var body: some View {
     NavigationStack {
@@ -18,8 +19,12 @@ struct HomeView: View {
 
         ScrollView {
           VStack(alignment: .leading, spacing: 20.0) {
-            Section {
+            Section(header: SectionHeader(title: "Categories")) {
               CategoriesGallery(categories: categories)
+            }
+
+            Section(header: SectionHeader(title: "Trending collections")) {
+              TrendingCollectionsGallery(trendingItems: trendingItems)
             }
           }
         }
@@ -32,6 +37,21 @@ struct HomeView: View {
       .navigationTitle("NFT Marketplace")
     }
   }
+}
+
+struct SectionHeader: View {
+  var title: String
+
+  var body: some View {
+    Text(title)
+      .font(.title3)
+      .fontWeight(.semibold)
+      .kerning(0.38)
+      .multilineTextAlignment(.center)
+      .foregroundColor(.white)
+      .padding(.horizontal)
+  }
+
 }
 
 struct HomeView_Previews: PreviewProvider {
