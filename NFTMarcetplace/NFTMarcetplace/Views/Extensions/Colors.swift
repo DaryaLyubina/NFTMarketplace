@@ -17,6 +17,17 @@ extension EllipticalGradient {
   )
 }
 
+extension LinearGradient {
+  static var welcomeBackground = LinearGradient(
+    stops: [
+      Gradient.Stop(color: Color(red: 0.36, green: 0.38, blue: 0.61), location: 0.00),
+      Gradient.Stop(color: Color(red: 0.46, green: 0.49, blue: 0.7), location: 1.00)
+    ],
+    startPoint: UnitPoint(x: 0.5, y: 0),
+    endPoint: UnitPoint(x: 0.85, y: 0.09)
+  )
+}
+
 extension Color {
   enum General {
     static let textSecondaryColor = Color("TextSecondaryColor")

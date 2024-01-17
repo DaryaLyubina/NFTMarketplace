@@ -24,7 +24,6 @@ struct WelcomeButtonStyle: ButtonStyle {
             .kerning(-0.41)
             .fontWeight(.semibold)
     }
-
 }
 
 extension Color {

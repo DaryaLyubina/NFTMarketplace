@@ -34,7 +34,7 @@ struct HomeView: View {
                 case .topSeller(let items):
                   TopSellerSection(sellers: items)
                 }
-                
+
                 Spacer()
                   .frame(height: 20)
               }
