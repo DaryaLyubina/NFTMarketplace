@@ -8,9 +8,13 @@
 import SwiftUI
 
 struct HomeView: View {
-  private var categories = Category.createTestData()
-  private var trendingItems = TrendingItem.createTestData()
-  private var topSellers = Seller.createTestData()
+  @State var selectedMenuItem: SectionType?
+
+  private var sections: [SectionType] = [
+    .categories(items: Category.createTestData()),
+    .trendingCollections(items: TrendingItem.createTestData()),
+    .topSeller(items: Seller.createTestData())
+  ]
 
   var body: some View {
     NavigationStack {
@@ -19,18 +23,28 @@ struct HomeView: View {
           .ignoresSafeArea()
 
         ScrollView {
-          VStack(alignment: .leading) {
-            CategoriesSection(categories: categories)
-
-            Spacer()
-              .frame(height: 20)
-
-            TrendingItemsSection(trendingItems: trendingItems)
-
-            Spacer()
-              .frame(height: 20)
-
-            TopSellerSection(sellers: topSellers)
+          ScrollViewReader { proxy in
+            VStack(alignment: .leading) {
+              ForEach(sections, id: \.title) { section in
+                switch section {
+                case .categories(let items):
+                  CategoriesSection(categories: items)
+                case .trendingCollections(let items):
+                  TrendingItemsSection(trendingItems: items)
+                case .topSeller(let items):
+                  TopSellerSection(sellers: items)
+                }
+                
+                Spacer()
+                  .frame(height: 20)
+              }
+            }
+            .onChange(of: selectedMenuItem) { _ in
+              withAnimation {
+                proxy.scrollTo(selectedMenuItem?.title, anchor: .top)
+              }
+              selectedMenuItem = nil
+            }
           }
         }
       }
@@ -39,9 +53,37 @@ struct HomeView: View {
           .padding(.horizontal)
       }
       .navigationTitle("NFT Marketplace")
+      .toolbar {
+        ToolbarItem {
+          Menu("GoTo") {
+            ForEach(sections, id: \.title) { section in
+              Button(section.title) {
+                selectedMenuItem = section
+              }
+            }
+          }
+        }
+      }
+      .toolbarColorScheme(.dark, for: .navigationBar)
+      .preferredColorScheme(.dark)
     }
-    .toolbarColorScheme(.dark, for: .navigationBar)
-    .preferredColorScheme(.dark)
+  }
+}
+
+enum SectionType: Equatable {
+  case categories(items: [Category])
+  case trendingCollections(items: [TrendingItem])
+  case topSeller(items: [Seller])
+
+  var title: String {
+    switch self {
+    case .categories:
+      return "Categories"
+    case .trendingCollections:
+      return "Trending Collections"
+    case .topSeller:
+      return "Top seller"
+    }
   }
 }
 
